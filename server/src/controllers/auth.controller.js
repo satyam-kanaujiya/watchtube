@@ -5,7 +5,7 @@ import ApiResponse from "../utils/ApiResponse.js";
 
 const options = {
     httpOnly:true,
-    sameSite:"Lax"
+    sameSite:"None"
 };
 
 if(process.env.NODE_ENV==="production"){
