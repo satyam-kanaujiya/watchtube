@@ -5,7 +5,6 @@ import ApiResponse from "../utils/ApiResponse.js";
 
 const options = {
     httpOnly:true,
-    maxAge:process.env.ACCESS_TOKEN_EXPIRY,
     sameSite:"Lax"
 };
 
