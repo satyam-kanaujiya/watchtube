@@ -1,1 +1,1 @@
-# Watchtube - Video Streaming Platform
+# Watchtube - Video Streaming Platform (Not for vercel)
