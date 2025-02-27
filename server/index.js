@@ -18,9 +18,8 @@ process.on("unhandledRejection",((error)=>{
 const PORT = process.env.PORT || 3000;
 
 dbConnect().then(()=>{
-    console.log("DB connection successfull");
     app.listen(PORT,()=>{
-        console.log("server is listening at PORT",PORT);
+        // console.log("server is listening at PORT",PORT);
     });
 }).catch((error)=>{
     console.log("DB and server connection failed");
