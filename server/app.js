@@ -7,7 +7,6 @@ import videoRouter from './src/routes/video.route.js';
 import commentRouter from './src/routes/comment.route.js';
 import customError from './src/utils/customError.js';
 import cookieParser from 'cookie-parser';
-import morgan from 'morgan';
 import { rateLimit } from 'express-rate-limit';
 import helmet from 'helmet';
 import hpp from 'hpp';
@@ -29,7 +28,6 @@ app.use(cors({
 }));
 app.use(helmet());
 app.use("/api",limiter);
-app.use(morgan("tiny"));
 app.use(express.json({limit:"16kb"}));
 app.use(sanitize());
 app.use(express.urlencoded({extended:true,limit:"16kb"}));
