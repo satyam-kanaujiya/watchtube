@@ -1,1 +1,1 @@
-# watchtube - video streaming platform
+# Watchtube - Video Streaming Platform
